@@ -830,6 +830,7 @@ form.ajax-file-upload img.spinner {
   margin: 6px 0 0 0;
   text-transform: uppercase;
   width: 200px;
+  background-color: #f5f8fa;
   /* to match width of sidebar */
 
 }
