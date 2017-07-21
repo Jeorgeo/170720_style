@@ -3497,10 +3497,12 @@ label.retag-error {
 .user-info-table .col1 {
   width: 140px;
   text-align: center;
+  background-color: #ffffff;
 }
 .user-info-table .col2 {
   padding: 0 0 0 10px;
   width: 400px;
+  background-color: #ffffff;
 }
 .user-info-table .col3 {
   width: 460px;
@@ -4291,6 +4293,7 @@ textarea.tipped-input {
   float: right;
   padding: 11px 0 11px 15px;
   width: 80%;
+  background-color: #ffffff;
 }
 .settings-main .help {
   font-size: 12px;
@@ -4934,4 +4937,9 @@ body.lang-nb_NO .box .inputs #ab-tag-search {
 .views.some-views:hover span,
 .views.some-views:hover div {
   color: #ffffff;
+}
+
+.post.question,
+.post.js-question {
+  background-color: #ffffff;
 }
