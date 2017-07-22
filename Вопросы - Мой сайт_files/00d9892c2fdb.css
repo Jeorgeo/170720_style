@@ -235,9 +235,11 @@ a:hover {
   text-decoration: underline;
 }
 .js-avatar-box {
-  text-decoration: none;
+  display: inline-block;
   width: 32px;
   height: 32px;
+  margin: 10px;
+  text-decoration: none;
 }
 .box .js-avatar {
   height: 48px;
@@ -926,6 +928,7 @@ input[type="reset"].large,
   font-size: 20px;
   height: 35px;
   line-height: 35px;
+  margin-top: 10px;
   padding: 0 10px;
 }
 button:hover,
@@ -1037,7 +1040,7 @@ body.anon.ask-page .search-drop-menu {
 /* ----- Sidebar Widgets Box, check main_page/sidebar.html or question/sidebar.html ----- */
 .box {
   background: #fff;
-  padding: 4px 2px 10px 2px;
+  padding: 0;
   width: 100%;
   overflow: hidden;
   box-sizing: border-box;
@@ -1047,8 +1050,9 @@ body.anon.ask-page .search-drop-menu {
   /* notify by email box */
 }
 .box p {
-  margin-bottom: 4px;
-  color: #707070;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  color: #696969;
   font-family: 'Open Sans Condensed', Arial, sans-serif;
   font-size: 14px;
 }
@@ -1057,15 +1061,13 @@ body.anon.ask-page .search-drop-menu {
   margin: 0;
 }
 .box h2 {
-  padding-left: 0;
-  background: #eceeeb;
+  padding-left: 10px;
+  background: #f5f8fa;
   line-height: 30px;
-  text-align: right;
+  text-align: left;
   font-size: 18px !important;
   font-weight: normal;
-  color: #656565;
-  padding-right: 10px;
-  margin-bottom: 10px;
+  color: #696969;
   font-family: 'Open Sans Condensed', Arial, sans-serif;
   width: 190px;
 }
@@ -1075,10 +1077,7 @@ body.anon.ask-page .search-drop-menu {
   text-align: left;
   font-weight: normal;
   font-family: 'Open Sans Condensed', Arial, sans-serif;
-  padding-left: 0px;
-}
-.box .contributorback {
-  background: #eceeeb url('/static/default/media/images/contributorsback.png?208ebc816dbb') no-repeat center left;
+  padding-left: 10px;
 }
 .box form {
   margin: 0px;
@@ -1122,6 +1121,7 @@ body.anon.ask-page .search-drop-menu {
 .box .inputs #subscribedTagInput,
 .box .inputs #ab-tag-search {
   width: 147px;
+  margin-left: 10px;
   padding-left: 5px;
   border: #c9c9b5 1px solid;
   height: 25px;
@@ -1136,12 +1136,15 @@ body.anon.ask-page .search-drop-menu {
 .box .inputs #subscribedTagAdd,
 .box .inputs #ab-tag-search-add {
   border: 0;
-  margin: -2px 0 0 0;
+  margin: 10px;
 }
 .box .inputs #ab-tag-search-add {
   width: 47px;
 }
 .box img.gravatar {
+  display: block;
+  max-width: 100%;
+  height: auto;
   margin: 1px 1px 0 0;
 }
 .box .js-question-follower-count {
@@ -1585,9 +1588,13 @@ ul.js-related-tags {
 ul.tags li {
   float: left;
   display: block;
-  margin: 0 8px 8px 0;
+  margin: 10px 10px 0 10px;
   padding: 0;
   height: 20px;
+}
+
+ul.tags li:last-child {
+  margin: 10px;
 }
 .wildcard-tags {
   clear: both;
@@ -1600,7 +1607,7 @@ ul.tags.marked-tags li,
   margin-bottom: 5px;
 }
 #tagSelector div.inputs {
-  margin: 6px 0 12px 0;
+  margin: 10px 0;
 }
 .tags-page ul.tags li,
 ul#ab-user-tags li {
@@ -2382,11 +2389,12 @@ tr.mceLast {
 .question-page .post-body {
   overflow: auto;
   font-family: Arial;
-  color: #4b4b4b;
+  color: #696969;
+  background-color: #ffffff;
   word-wrap: break-word;
   max-width: 683px;
-  margin: 8px 0 0 0;
-  padding-bottom: 5px;
+  margin: 10px;
+  padding: 10px;
 }
 .question-page .post-body a {
   color: #1b79bd;
@@ -3756,14 +3764,14 @@ body.main-page ins {
 #ground {
   width: 100%;
   clear: both;
-  border-top: 1px solid #000;
   padding: 16px 0 0 0;
-  background: #16160f;
+  background: #ffffff;
   font-size: 16px;
   font-family: 'Open Sans Condensed', Arial, sans-serif;
 }
 #ground a:hover {
-  color: #ebff88;
+  color: #e81a1b;
+  text-decoration: none;
 }
 #ground p {
   margin-bottom: 0;
@@ -3775,24 +3783,23 @@ body.main-page ins {
   float: left;
 }
 .footer-links a {
-  color: #e7e8a8;
+  color: #696969;
+  text-decoration: none;
 }
 .powered-link {
   width: 450px;
   float: left;
   text-align: left;
 }
-.powered-link a {
-  color: #8ebcc7;
-}
 .copyright {
-  color: #616161;
+  color: #696969;
   width: 500px;
   float: right;
   text-align: right;
 }
-.copyright a {
-  color: #8ebcc7;
+.copyright a,
+.powered-link a {
+  color: #303233;
 }
 .copyright img.license-logo {
   margin: 6px 0px 20px 10px;
@@ -4246,7 +4253,7 @@ ul.post-retag input {
   margin: 0 0 3px 0;
 }
 #tagSelector {
-  padding-bottom: 2px;
+  padding-bottom: 0;
   margin-bottom: 0;
 }
 .js-related-tags {
@@ -4774,7 +4781,7 @@ textarea.tipped-input {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  margin: 6px 0 10px;
+  margin: 10px;
 }
 .settings-nav *,
 .settings-main * {
@@ -4784,8 +4791,9 @@ textarea.tipped-input {
 }
 .settings-main {
   float: right;
-  padding: 11px 0 11px 15px;
+  background-color: #ffffff;
   width: 80%;
+  padding: 15px;
 }
 .settings-main .help {
   font-size: 12px;
@@ -11764,4 +11772,8 @@ a.js-tag-name:hover {
 .short-summary a:hover {
   color: rgba(232, 26, 27, 0.8);
   text-decoration: none;
+}
+
+.link-separator {
+  color: #e81a1b;
 }
