@@ -236,11 +236,15 @@ a:hover {
 }
 .js-avatar-box {
   display: inline-block;
-  width: 32px;
-  height: 32px;
+  width: 90%;
   margin: 10px;
   text-decoration: none;
 }
+#ContentRight .js-avatar-box  {
+  width: 32px;
+  height: 32px;
+}
+
 .box .js-avatar {
   height: 48px;
   width: 48px;
@@ -2383,9 +2387,6 @@ tr.mceLast {
 .question-page .js-question .post-content {
   margin-bottom: 10px;
 }
-.question-page .answer .post-content {
-  border-bottom: 1px solid #D4D4D4;
-}
 .question-page .post-body {
   overflow: auto;
   font-family: Arial;
@@ -2425,7 +2426,7 @@ tr.mceLast {
   width: 175px;
 }
 .question-page .post-update-info {
-  background: #ffffff url('/static/default/media/images/background-user-info.png?208ebc816dbb') repeat-x bottom;
+  background: #f5f8fa;
   float: right;
   font-size: 9px;
   font-family: Arial;
@@ -2475,7 +2476,7 @@ tr.mceLast {
 .question-page .post-controls a,
 .question-page .post-controls span.dropdown-toggle {
   color: #777;
-  padding: 0px 7px 3px 18px;
+  padding: 0 0 3px 18px;
   cursor: pointer;
   border: none;
   font-size: 12px;
@@ -2652,7 +2653,6 @@ tr.mceLast {
 .question-page .comments div.controls {
   width: 100%;
   margin: 3px 0 20px 5px;
-  padding-left: 30px;
 }
 .question-page .comments .edit-comment-buttons {
   margin-left: -2px;
@@ -2936,9 +2936,6 @@ tr.mceLast {
 }
 .question-page .answered-accepted strong {
   color: #E1E818;
-}
-.question-page .answered-by-owner {
-  background: #F1F1FF;
 }
 .question-page .answered-by-owner .comments {
   background-color: #E6ECFF;
@@ -3399,7 +3396,7 @@ a.medal {
   margin-right: 5px;
   color: #333;
   text-decoration: none;
-  background: url('/static/default/media/images/medala.gif?208ebc816dbb') no-repeat;
+  background: #f5f8fa;
   border-left: 1px solid #EEE;
   border-top: 1px solid #EEE;
   border-bottom: 1px solid #CCC;
@@ -3408,13 +3405,10 @@ a.medal {
   white-space: nowrap;
 }
 a:hover.medal {
-  color: #333;
+  color: #ffffff;
   text-decoration: none;
-  background: url('/static/default/media/images/medala_on.gif?208ebc816dbb') no-repeat;
-  border-left: 1px solid #E7E296;
-  border-top: 1px solid #E7E296;
-  border-bottom: 1px solid #D1CA3D;
-  border-right: 1px solid #D1CA3D;
+  background: #e81a1b;
+  border: 1px solid #e81a1b;
 }
 #award-list .user {
   float: left;
@@ -3495,7 +3489,7 @@ a:hover.medal {
   margin-left: 0;
 }
 .user-profile-page img.gravatar {
-  margin: 2px 0 3px 0;
+  margin: 0;
 }
 .user-profile-page .vote-notification h3 {
   padding: 10px;
@@ -4054,7 +4048,7 @@ button::-moz-focus-inner {
 .submit {
   cursor: pointer;
   /*letter-spacing:1px;*/
-  background-color: #D4D0C8;
+  background-color: #f5f8fa;
   height: 30px;
   border: 1px solid #777777;
   /*	width:100px; */
@@ -4781,7 +4775,6 @@ textarea.tipped-input {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  margin: 10px;
 }
 .settings-nav *,
 .settings-main * {
@@ -4792,7 +4785,7 @@ textarea.tipped-input {
 .settings-main {
   float: right;
   background-color: #ffffff;
-  width: 80%;
+  width: 78%;
   padding: 15px;
 }
 .settings-main .help {
@@ -5101,7 +5094,6 @@ td.setting-input textarea {
   #metaNav a#navTags,
   #metaNav a#navGroups {
     background: none;
-    color: #d0e296;
     font-size: 16px;
     text-decoration: underline;
     margin: 7px 28px 0 0;
